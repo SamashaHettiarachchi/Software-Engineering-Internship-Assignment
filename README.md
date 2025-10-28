@@ -17,7 +17,7 @@ This Library Management System allows users to:
 
 ### Backend
 
-- **C# .NET 8.0** - Web API framework
+- **C# .NET 9.0** - Web API framework
 - **Entity Framework Core** - ORM for database operations
 - **SQLite** - Lightweight database
 - **Swagger/OpenAPI** - API documentation
@@ -34,7 +34,7 @@ This Library Management System allows users to:
 
 Before running this application, ensure you have the following installed:
 
-1. **.NET 8.0 SDK** or later
+1. **.NET 9.0 SDK** or later
 
    - Download from: https://dotnet.microsoft.com/download
    - Verify installation: `dotnet --version`
@@ -53,8 +53,8 @@ Before running this application, ensure you have the following installed:
 
 ```bash
 # If using Git
-git clone <your-repository-url>
-cd SE_assignment
+git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
+cd Software-Engineering-Internship-Assignment
 
 # Or download and extract the ZIP file
 ```
@@ -91,7 +91,7 @@ The API will start at:
 - HTTPS: `https://localhost:7001`
 - Swagger UI: `http://localhost:5001` or `https://localhost:7001`
 
-**Note:** The database (`library.db`) will be created automatically in the Backend/LibraryAPI folder on first run with sample data.
+**Note:** The database (`library.db`) will be created automatically in the Backend/LibraryAPI folder on first run.
 
 ### Step 3: Frontend Setup
 
@@ -121,23 +121,29 @@ The frontend will start at: `http://localhost:3000`
 
 1. Open your web browser and go to `http://localhost:3000`
 
-2. **Add a Book:**
+2. **Register/Login:**
 
-   - Fill in the form with Title (required), Author (required), and Description (optional)
+   - Create a new account by clicking "Register here"
+   - Fill in username, email, and password (min 6 characters)
+   - Or login with existing credentials
+
+3. **Add a Book:**
+
+   - After logging in, fill in the form with Title (required), Author (required), and Description (optional)
    - Click "Add Book"
 
-3. **View Books:**
+4. **View Books:**
 
    - All books are displayed in a card layout below the form
    - Each card shows the title, author, description, and creation date
 
-4. **Edit a Book:**
+5. **Edit a Book:**
 
    - Click the ✏️ (edit) button on any book card
    - The form will populate with the book's data
    - Make changes and click "Update Book"
 
-5. **Delete a Book:**
+6. **Delete a Book:**
    - Click the 🗑️ (delete) button on any book card
    - Confirm the deletion in the popup dialog
 
@@ -149,31 +155,37 @@ SE_assignment/
 ├── Backend/
 │   └── LibraryAPI/
 │       ├── Controllers/
-│       │   └── BooksController.cs      # REST API endpoints
+│       │   ├── AuthController.cs       # Authentication endpoints
+│       │   └── BooksController.cs      # Book CRUD endpoints
 │       ├── Data/
 │       │   └── LibraryContext.cs       # Database context
 │       ├── Models/
-│       │   └── Book.cs                 # Book entity model
+│       │   ├── Book.cs                 # Book entity model
+│       │   └── User.cs                 # User entity & DTOs
+│       ├── Migrations/                 # EF Core migrations
 │       ├── Properties/
 │       │   └── launchSettings.json     # Launch configuration
 │       ├── Program.cs                  # Application entry point
 │       ├── appsettings.json            # Configuration
 │       ├── LibraryAPI.csproj           # Project file
-│       └── library.db                  # SQLite database (created on run)
+│       └── library.db                  # SQLite database (auto-created)
 │
 ├── Frontend/
 │   └── library-frontend/
-│       ├── public/                     # Static assets
 │       ├── src/
 │       │   ├── components/
-│       │   │   ├── BookForm.tsx        # Form component
+│       │   │   ├── AuthForm.tsx        # Login/Register form
+│       │   │   ├── AuthForm.css
+│       │   │   ├── BookForm.tsx        # Book add/edit form
 │       │   │   ├── BookForm.css
-│       │   │   ├── BookList.tsx        # List component
+│       │   │   ├── BookList.tsx        # Book display component
 │       │   │   └── BookList.css
 │       │   ├── services/
-│       │   │   └── bookService.ts      # API service layer
+│       │   │   ├── authService.ts      # Authentication API calls
+│       │   │   └── bookService.ts      # Book API calls
 │       │   ├── types/
-│       │   │   └── Book.ts             # TypeScript interfaces
+│       │   │   ├── Book.ts             # Book interfaces
+│       │   │   └── User.ts             # User interfaces
 │       │   ├── App.tsx                 # Main app component
 │       │   ├── App.css
 │       │   ├── main.tsx                # Entry point
@@ -189,6 +201,13 @@ SE_assignment/
 
 ## 🔌 API Endpoints
 
+### Authentication API
+
+| Method | Endpoint             | Description       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/auth/register` | Register new user |
+| POST   | `/api/auth/login`    | Login user        |
+
 ### Books API
 
 | Method | Endpoint          | Description         |
@@ -199,7 +218,17 @@ SE_assignment/
 | PUT    | `/api/books/{id}` | Update a book       |
 | DELETE | `/api/books/{id}` | Delete a book       |
 
-### Example API Request (POST)
+### Example API Request (Register)
+
+```json
+{
+  "username": "johndoe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+```
+
+### Example API Request (Create Book)
 
 ```json
 {
@@ -239,16 +268,20 @@ Invoke-RestMethod -Uri "http://localhost:5001/api/books" -Method Post -Body $bod
 
 - ✅ RESTful API with proper HTTP methods
 - ✅ Entity Framework Core with SQLite
+- ✅ **User Authentication** (Register/Login)
+- ✅ Password hashing with SHA256
 - ✅ Data validation with attributes
 - ✅ Error handling and logging
 - ✅ CORS configuration for frontend access
 - ✅ Swagger/OpenAPI documentation
-- ✅ Seed data for testing
 - ✅ Proper response codes (200, 201, 204, 400, 404, 500)
 
 ### Frontend Features
 
 - ✅ React with TypeScript
+- ✅ **Authentication UI** (Login/Register forms)
+- ✅ Session management with localStorage
+- ✅ Protected routes (login required)
 - ✅ Component-based architecture
 - ✅ Service layer for API calls
 - ✅ Form validation
@@ -305,9 +338,9 @@ taskkill /PID <process-id> /F
 - **Component Structure:** Reusable, single-responsibility components
 - **State Management:** React hooks (useState, useEffect)
 
-## 🔮 Future Enhancements (Optional)
+## 🔮 Future Enhancements
 
-- [ ] User authentication and authorization
+- [ ] JWT token-based authentication
 - [ ] Book categories/genres
 - [ ] Search and filter functionality
 - [ ] Pagination for large datasets
@@ -315,6 +348,7 @@ taskkill /PID <process-id> /F
 - [ ] ISBN validation
 - [ ] Barcode scanning
 - [ ] Borrowing/lending system
+- [ ] User roles (Admin/User)
 
 ## 📧 Contact
 
