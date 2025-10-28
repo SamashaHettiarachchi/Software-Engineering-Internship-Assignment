@@ -1,206 +1,409 @@
-# Library Management System# Library Management System
+# Library Management System# Library Management System# Library Management System
 
 
 
-A full-stack web application for managing library books with complete CRUD operations. This project demonstrates modern web development using C# .NET for the backend API and React with TypeScript for the frontend interface.A full-stack web application for managing library books with CRUD (Create, Read, Update, Delete) operations. Built with C# .NET Web API backend and React TypeScript frontend.
+A full-stack web application for managing library books. Built with C# .NET backend and React TypeScript frontend.
 
 
 
-## Project Overview## 🎯 Project Overview
+## OverviewA full-stack web application for managing library books with complete CRUD operations. This project demonstrates modern web development using C# .NET for the backend API and React with TypeScript for the frontend interface.A full-stack web application for managing library books with CRUD (Create, Read, Update, Delete) operations. Built with C# .NET Web API backend and React TypeScript frontend.
 
 
 
-This Library Management System provides a comprehensive solution for managing book collections in a library. The application allows users to register accounts, log in securely, and perform all essential operations on book records including creating, viewing, updating, and deleting entries.This Library Management System allows users to:
+This system allows users to manage book collections in a library. Users can register accounts, log in, and perform operations on book records including creating, viewing, updating, and deleting entries.
 
 
 
-Key features include:- ✅ Create new book records with title, author, and description
+Features:## Project Overview## 🎯 Project Overview
 
-- User authentication with secure password hashing- ✅ View all books in the library
+- User authentication with password hashing
 
-- Complete CRUD operations for book management- ✅ Update existing book information
+- Create, read, update, and delete books
 
-- Input validation on both client and server side- ✅ Delete books from the collection
+- Input validation on client and server
 
-- Error handling with user-friendly feedback- ✅ Input validation and error handling
+- Error handlingThis Library Management System provides a comprehensive solution for managing book collections in a library. The application allows users to register accounts, log in securely, and perform all essential operations on book records including creating, viewing, updating, and deleting entries.This Library Management System allows users to:
 
-- Responsive design that works across different devices- ✅ Responsive and user-friendly interface
+- Responsive design
 
-- RESTful API following industry best practices
+- RESTful API
+
+
+
+## TechnologiesKey features include:- ✅ Create new book records with title, author, and description
+
+
+
+Backend:- User authentication with secure password hashing- ✅ View all books in the library
+
+- C# .NET 9.0
+
+- Entity Framework Core- Complete CRUD operations for book management- ✅ Update existing book information
+
+- SQLite
+
+- Swagger- Input validation on both client and server side- ✅ Delete books from the collection
+
+
+
+Frontend:- Error handling with user-friendly feedback- ✅ Input validation and error handling
+
+- React 18
+
+- TypeScript- Responsive design that works across different devices- ✅ Responsive and user-friendly interface
+
+- Vite
+
+- Axios- RESTful API following industry best practices
+
+- CSS3
 
 ## 🛠️ Technologies Used
 
-## Technologies Used
-
-### Backend
-
-**Backend:**
-
-- C# .NET 9.0 - Web API framework- **C# .NET 9.0** - Web API framework
-
-- Entity Framework Core - Object-relational mapping- **Entity Framework Core** - ORM for database operations
-
-- SQLite - Lightweight embedded database- **SQLite** - Lightweight database
-
-- Swagger/OpenAPI - API documentation and testing- **Swagger/OpenAPI** - API documentation
-
-
-
-**Frontend:**### Frontend
-
-- React 18 - JavaScript library for building user interfaces
-
-- TypeScript - Type-safe JavaScript- **React 18** - UI library
-
-- Vite - Modern build tool and development server- **TypeScript** - Type-safe JavaScript
-
-- Axios - HTTP client for API communication- **Vite** - Build tool and dev server
-
-- CSS3 - Styling and responsive design- **Axios** - HTTP client for API calls
-
-- **CSS3** - Styling with modern features
-
 ## Prerequisites
 
-## 📋 Prerequisites
-
-Before running this application, you need to have the following installed on your system:
-
-Before running this application, ensure you have the following installed:
+## Technologies Used
 
 1. .NET 9.0 SDK or later
 
-   - Download from: https://dotnet.microsoft.com/download1. **.NET 9.0 SDK** or later
+   - Download: https://dotnet.microsoft.com/download### Backend
 
-   - Verify installation by running: dotnet --version
+   - Verify: dotnet --version
 
-   - Download from: https://dotnet.microsoft.com/download
+**Backend:**
 
-2. Node.js version 18 or higher with npm   - Verify installation: `dotnet --version`
+2. Node.js 18 or higher with npm
 
-   - Download from: https://nodejs.org/
+   - Download: https://nodejs.org/- C# .NET 9.0 - Web API framework- **C# .NET 9.0** - Web API framework
 
-   - Verify installation by running: node --version and npm --version2. **Node.js 18+** and npm
+   - Verify: node --version and npm --version
 
+- Entity Framework Core - Object-relational mapping- **Entity Framework Core** - ORM for database operations
 
+## Installation
 
-3. Git for version control (optional)   - Download from: https://nodejs.org/
+- SQLite - Lightweight embedded database- **SQLite** - Lightweight database
 
-   - Download from: https://git-scm.com/   - Verify installation: `node --version` and `npm --version`
+Clone the repository:
 
+```bash- Swagger/OpenAPI - API documentation and testing- **Swagger/OpenAPI** - API documentation
 
-
-## Installation and Setup3. **Git** (optional, for version control)
-
-   - Download from: https://git-scm.com/
-
-### Clone the Repository
-
-## 🚀 Installation & Setup
-
-```bash
-
-git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git### Step 1: Clone or Download the Project
+git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
 
 cd Software-Engineering-Internship-Assignment
 
-``````bash
+```
 
-# If using Git
+**Frontend:**### Frontend
 
-Alternatively, you can download the repository as a ZIP file and extract it.git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
+## Running the Application
 
-cd Software-Engineering-Internship-Assignment
+- React 18 - JavaScript library for building user interfaces
 
-### Backend Setup
+### Backend
 
-# Or download and extract the ZIP file
+- TypeScript - Type-safe JavaScript- **React 18** - UI library
 
-1. Navigate to the backend directory:```
+1. Navigate to backend directory:
+
+```powershell- Vite - Modern build tool and development server- **TypeScript** - Type-safe JavaScript
+
+cd Backend\LibraryAPI
+
+```- Axios - HTTP client for API communication- **Vite** - Build tool and dev server
+
+
+
+2. Restore packages:- CSS3 - Styling and responsive design- **Axios** - HTTP client for API calls
 
 ```powershell
 
-cd Backend\LibraryAPI### Step 2: Backend Setup
+dotnet restore- **CSS3** - Styling with modern features
 
 ```
 
-1. Navigate to the backend directory:
+## Prerequisites
 
-2. Restore the required NuGet packages:
+3. Build:
 
-```powershell```powershell
-
-dotnet restorecd Backend\LibraryAPI
-
-``````
-
-
-
-3. Build the project to ensure everything compiles correctly:2. Restore NuGet packages:
-
-```powershell
-
-dotnet build```powershell
-
-```dotnet restore
-
-```
-
-4. Run the backend server:
-
-```powershell3. Build the project:
-
-dotnet run
-
-``````powershell
+```powershell## 📋 Prerequisites
 
 dotnet build
 
-The API will start and be accessible at:```
+```Before running this application, you need to have the following installed on your system:
 
-- HTTP: http://localhost:5001
 
-- HTTPS: https://localhost:70014. Run the backend:
 
-- Swagger UI: http://localhost:5001 or https://localhost:7001
+4. Run:Before running this application, ensure you have the following installed:
 
 ```powershell
 
-Note: The SQLite database file (library.db) will be created automatically in the Backend/LibraryAPI directory when you first run the application.dotnet run
+dotnet run1. .NET 9.0 SDK or later
 
 ```
 
-### Frontend Setup
+   - Download from: https://dotnet.microsoft.com/download1. **.NET 9.0 SDK** or later
 
-The API will start at:
+The API will start at http://localhost:5001 and https://localhost:7001
 
-1. Open a new terminal window (keep the backend server running in the first terminal)
+   - Verify installation by running: dotnet --version
 
-- HTTP: `http://localhost:5001`
+### Frontend
 
-2. Navigate to the frontend directory:- HTTPS: `https://localhost:7001`
+   - Download from: https://dotnet.microsoft.com/download
 
-```powershell- Swagger UI: `http://localhost:5001` or `https://localhost:7001`
+1. Open new terminal and navigate to frontend:
+
+```powershell2. Node.js version 18 or higher with npm   - Verify installation: `dotnet --version`
 
 cd Frontend\library-frontend
 
-```**Note:** The database (`library.db`) will be created automatically in the Backend/LibraryAPI folder on first run.
+```   - Download from: https://nodejs.org/
 
 
 
-3. Install the required npm packages:### Step 3: Frontend Setup
+2. Install dependencies:   - Verify installation by running: node --version and npm --version2. **Node.js 18+** and npm
 
 ```powershell
 
-npm install1. Open a **new terminal/command prompt** (keep the backend running)
+npm install
 
 ```
 
-2. Navigate to the frontend directory:
+3. Git for version control (optional)   - Download from: https://nodejs.org/
 
-4. Start the development server:
+3. Start development server:
 
-```powershell```powershell
+```powershell   - Download from: https://git-scm.com/   - Verify installation: `node --version` and `npm --version`
+
+npm run dev
+
+```
+
+
+
+The application will start at http://localhost:3000## Installation and Setup3. **Git** (optional, for version control)
+
+
+
+## Usage   - Download from: https://git-scm.com/
+
+
+
+1. Open http://localhost:3000 in your browser### Clone the Repository
+
+
+
+2. Register a new account or log in## 🚀 Installation & Setup
+
+
+
+3. Add books using the form```bash
+
+
+
+4. View all books in the listgit clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git### Step 1: Clone or Download the Project
+
+
+
+5. Edit books by clicking the edit buttoncd Software-Engineering-Internship-Assignment
+
+
+
+6. Delete books by clicking the delete button``````bash
+
+
+
+## Project Structure# If using Git
+
+
+
+```Alternatively, you can download the repository as a ZIP file and extract it.git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
+
+Software-Engineering-Internship-Assignment/
+
+├── Backend/cd Software-Engineering-Internship-Assignment
+
+│   └── LibraryAPI/
+
+│       ├── Controllers/### Backend Setup
+
+│       │   ├── AuthController.cs
+
+│       │   └── BooksController.cs# Or download and extract the ZIP file
+
+│       ├── Data/
+
+│       │   └── LibraryContext.cs1. Navigate to the backend directory:```
+
+│       ├── Models/
+
+│       │   ├── Book.cs```powershell
+
+│       │   └── User.cs
+
+│       ├── Program.cscd Backend\LibraryAPI### Step 2: Backend Setup
+
+│       └── LibraryAPI.csproj
+
+│```
+
+└── Frontend/
+
+    └── library-frontend/1. Navigate to the backend directory:
+
+        ├── src/
+
+        │   ├── components/2. Restore the required NuGet packages:
+
+        │   ├── services/
+
+        │   ├── types/```powershell```powershell
+
+        │   └── App.tsx
+
+        ├── package.jsondotnet restorecd Backend\LibraryAPI
+
+        └── vite.config.ts
+
+`````````
+
+
+
+## API Endpoints
+
+
+
+### Authentication3. Build the project to ensure everything compiles correctly:2. Restore NuGet packages:
+
+- POST /api/auth/register - Register new user
+
+- POST /api/auth/login - Login user```powershell
+
+
+
+### Booksdotnet build```powershell
+
+- GET /api/books - Get all books
+
+- GET /api/books/{id} - Get book by ID```dotnet restore
+
+- POST /api/books - Create new book
+
+- PUT /api/books/{id} - Update book```
+
+- DELETE /api/books/{id} - Delete book
+
+4. Run the backend server:
+
+## Testing
+
+```powershell3. Build the project:
+
+Use Swagger UI at http://localhost:5001 to test the API endpoints.
+
+dotnet run
+
+Or use PowerShell:
+
+```powershell``````powershell
+
+Invoke-RestMethod -Uri "http://localhost:5001/api/books" -Method Get
+
+```dotnet build
+
+
+
+## TroubleshootingThe API will start and be accessible at:```
+
+
+
+### Port already in use- HTTP: http://localhost:5001
+
+```powershell
+
+netstat -ano | findstr :5001- HTTPS: https://localhost:70014. Run the backend:
+
+taskkill /PID <process-id> /F
+
+```- Swagger UI: http://localhost:5001 or https://localhost:7001
+
+
+
+### Cannot connect to API```powershell
+
+- Ensure backend is running on port 5001
+
+- Check CORS configurationNote: The SQLite database file (library.db) will be created automatically in the Backend/LibraryAPI directory when you first run the application.dotnet run
+
+
+
+### npm install fails```
+
+- Delete node_modules and package-lock.json
+
+- Run npm install again### Frontend Setup
+
+
+
+## FeaturesThe API will start at:
+
+
+
+Backend:1. Open a new terminal window (keep the backend server running in the first terminal)
+
+- RESTful API design
+
+- Entity Framework Core with SQLite- HTTP: `http://localhost:5001`
+
+- User authentication system
+
+- Password hashing with SHA2562. Navigate to the frontend directory:- HTTPS: `https://localhost:7001`
+
+- Model validation
+
+- Error handling and logging```powershell- Swagger UI: `http://localhost:5001` or `https://localhost:7001`
+
+- CORS configuration
+
+- Swagger documentationcd Frontend\library-frontend
+
+
+
+Frontend:```**Note:** The database (`library.db`) will be created automatically in the Backend/LibraryAPI folder on first run.
+
+- React with TypeScript
+
+- Authentication UI
+
+- Session management
+
+- Component-based architecture3. Install the required npm packages:### Step 3: Frontend Setup
+
+- Service layer for API calls
+
+- Form validation```powershell
+
+- Error handling
+
+- Responsive designnpm install1. Open a **new terminal/command prompt** (keep the backend running)
+
+
+
+## Contact```
+
+
+
+Email: people@expernetic.com2. Navigate to the frontend directory:
+
+
+
+## License4. Start the development server:
+
+
+
+This project was developed as part of a software engineering internship assignment for educational purposes.```powershell```powershell
+
 
 npm run devcd Frontend\library-frontend
 
