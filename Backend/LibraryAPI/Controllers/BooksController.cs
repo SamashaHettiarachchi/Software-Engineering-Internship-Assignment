@@ -38,6 +38,11 @@ namespace LibraryAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Book>> CreateBook(Book book)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             book.CreatedAt = DateTime.UtcNow;
             book.UpdatedAt = DateTime.UtcNow;
 
@@ -53,6 +58,11 @@ namespace LibraryAPI.Controllers
             if (id != book.Id)
             {
                 return BadRequest();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
             }
 
             var existingBook = await _context.Books.FindAsync(id);

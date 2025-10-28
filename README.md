@@ -14,6 +14,14 @@ A full-stack library management application built with .NET 9 and React + TypeSc
 **Backend:** .NET 9, ASP.NET Core Web API, Entity Framework Core, SQLite  
 **Frontend:** React 18, TypeScript, Vite
 
+## Prerequisites
+
+Before running this application, ensure you have the following installed:
+
+- [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0)
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Git](https://git-scm.com/)
+
 ## Getting Started
 
 ### Backend Setup
