@@ -1,184 +1,334 @@
-# Library Management System# Library Management System# Library Management System
+# Library Management System# Library Management System# Library Management System# Library Management System
 
 
 
-A full-stack web application for managing library books. Built with C# .NET backend and React TypeScript frontend.
+A full-stack web application for managing library books with complete CRUD operations. Built with C# .NET 9.0 Web API and React TypeScript.A full-stack web application for managing library books. Built with C# .NET backend and React TypeScript frontend.
 
 
 
-## OverviewA full-stack web application for managing library books with complete CRUD operations. This project demonstrates modern web development using C# .NET for the backend API and React with TypeScript for the frontend interface.A full-stack web application for managing library books with CRUD (Create, Read, Update, Delete) operations. Built with C# .NET Web API backend and React TypeScript frontend.
+## Technologies Used## OverviewA full-stack web application for managing library books with complete CRUD operations. This project demonstrates modern web development using C# .NET for the backend API and React with TypeScript for the frontend interface.A full-stack web application for managing library books with CRUD (Create, Read, Update, Delete) operations. Built with C# .NET Web API backend and React TypeScript frontend.
 
 
 
-This system allows users to manage book collections in a library. Users can register accounts, log in, and perform operations on book records including creating, viewing, updating, and deleting entries.
+**Backend:**This system allows users to manage book collections in a library. Users can register accounts, log in, and perform operations on book records including creating, viewing, updating, and deleting entries.
+
+- C# .NET 9.0 Web API
+
+- Entity Framework Core 9.0Features:## Project Overview## 🎯 Project Overview
+
+- SQLite Database
+
+- Swagger/OpenAPI Documentation- User authentication with password hashing
 
 
 
-Features:## Project Overview## 🎯 Project Overview
-
-- User authentication with password hashing
-
-- Create, read, update, and delete books
-
-- Input validation on client and server
-
-- Error handlingThis Library Management System provides a comprehensive solution for managing book collections in a library. The application allows users to register accounts, log in securely, and perform all essential operations on book records including creating, viewing, updating, and deleting entries.This Library Management System allows users to:
-
-- Responsive design
-
-- RESTful API
-
-
-
-## TechnologiesKey features include:- ✅ Create new book records with title, author, and description
-
-
-
-Backend:- User authentication with secure password hashing- ✅ View all books in the library
-
-- C# .NET 9.0
-
-- Entity Framework Core- Complete CRUD operations for book management- ✅ Update existing book information
-
-- SQLite
-
-- Swagger- Input validation on both client and server side- ✅ Delete books from the collection
-
-
-
-Frontend:- Error handling with user-friendly feedback- ✅ Input validation and error handling
+**Frontend:**- Create, read, update, and delete books
 
 - React 18
 
-- TypeScript- Responsive design that works across different devices- ✅ Responsive and user-friendly interface
+- TypeScript 5- Input validation on client and server
 
-- Vite
+- Vite Build Tool
 
-- Axios- RESTful API following industry best practices
+- Axios HTTP Client- Error handlingThis Library Management System provides a comprehensive solution for managing book collections in a library. The application allows users to register accounts, log in securely, and perform all essential operations on book records including creating, viewing, updating, and deleting entries.This Library Management System allows users to:
 
-- CSS3
 
-## 🛠️ Technologies Used
+
+## Features- Responsive design
+
+
+
+- User authentication with secure password hashing- RESTful API
+
+- Create, read, update, and delete book records
+
+- Input validation on both client and server## TechnologiesKey features include:- ✅ Create new book records with title, author, and description
+
+- Error handling with user feedback
+
+- Responsive UI designBackend:- User authentication with secure password hashing- ✅ View all books in the library
+
+- RESTful API with Swagger documentation
+
+- C# .NET 9.0
 
 ## Prerequisites
 
-## Technologies Used
+- Entity Framework Core- Complete CRUD operations for book management- ✅ Update existing book information
 
-1. .NET 9.0 SDK or later
+1. .NET 9.0 SDK - [Download](https://dotnet.microsoft.com/download)
 
-   - Download: https://dotnet.microsoft.com/download### Backend
+   - Verify: `dotnet --version`- SQLite
 
-   - Verify: dotnet --version
 
-**Backend:**
 
-2. Node.js 18 or higher with npm
+2. Node.js 18+ and npm - [Download](https://nodejs.org/)- Swagger- Input validation on both client and server side- ✅ Delete books from the collection
 
-   - Download: https://nodejs.org/- C# .NET 9.0 - Web API framework- **C# .NET 9.0** - Web API framework
+   - Verify: `node --version` and `npm --version`
 
-   - Verify: node --version and npm --version
-
-- Entity Framework Core - Object-relational mapping- **Entity Framework Core** - ORM for database operations
+Frontend:- Error handling with user-friendly feedback- ✅ Input validation and error handling
 
 ## Installation
 
-- SQLite - Lightweight embedded database- **SQLite** - Lightweight database
+- React 18
 
-Clone the repository:
+### Clone Repository
 
-```bash- Swagger/OpenAPI - API documentation and testing- **Swagger/OpenAPI** - API documentation
+- TypeScript- Responsive design that works across different devices- ✅ Responsive and user-friendly interface
 
-git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
+```powershell
+
+git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git- Vite
 
 cd Software-Engineering-Internship-Assignment
 
-```
+```- Axios- RESTful API following industry best practices
 
-**Frontend:**### Frontend
 
-## Running the Application
 
-- React 18 - JavaScript library for building user interfaces
+### Backend Setup- CSS3
 
-### Backend
 
-- TypeScript - Type-safe JavaScript- **React 18** - UI library
 
-1. Navigate to backend directory:
-
-```powershell- Vite - Modern build tool and development server- **TypeScript** - Type-safe JavaScript
+```powershell## 🛠️ Technologies Used
 
 cd Backend\LibraryAPI
 
-```- Axios - HTTP client for API communication- **Vite** - Build tool and dev server
-
-
-
-2. Restore packages:- CSS3 - Styling and responsive design- **Axios** - HTTP client for API calls
-
-```powershell
-
-dotnet restore- **CSS3** - Styling with modern features
-
-```
-
-## Prerequisites
-
-3. Build:
-
-```powershell## 📋 Prerequisites
+dotnet restore## Prerequisites
 
 dotnet build
 
-```Before running this application, you need to have the following installed on your system:
-
-
-
-4. Run:Before running this application, ensure you have the following installed:
-
-```powershell
-
-dotnet run1. .NET 9.0 SDK or later
+dotnet run## Technologies Used
 
 ```
 
-   - Download from: https://dotnet.microsoft.com/download1. **.NET 9.0 SDK** or later
+1. .NET 9.0 SDK or later
 
-The API will start at http://localhost:5001 and https://localhost:7001
+The API will run at:
 
-   - Verify installation by running: dotnet --version
+- HTTP: http://localhost:5001   - Download: https://dotnet.microsoft.com/download### Backend
 
-### Frontend
+- HTTPS: https://localhost:7001
 
-   - Download from: https://dotnet.microsoft.com/download
+- Swagger: http://localhost:5001   - Verify: dotnet --version
 
-1. Open new terminal and navigate to frontend:
 
-```powershell2. Node.js version 18 or higher with npm   - Verify installation: `dotnet --version`
+
+Database file (`library.db`) is created automatically on first run.**Backend:**
+
+
+
+### Frontend Setup2. Node.js 18 or higher with npm
+
+
+
+Open a new terminal:   - Download: https://nodejs.org/- C# .NET 9.0 - Web API framework- **C# .NET 9.0** - Web API framework
+
+
+
+```powershell   - Verify: node --version and npm --version
 
 cd Frontend\library-frontend
 
-```   - Download from: https://nodejs.org/
+npm install- Entity Framework Core - Object-relational mapping- **Entity Framework Core** - ORM for database operations
+
+npm run dev
+
+```## Installation
 
 
+
+The application will run at: http://localhost:3000- SQLite - Lightweight embedded database- **SQLite** - Lightweight database
+
+
+
+## UsageClone the repository:
+
+
+
+1. Open http://localhost:3000 in your browser```bash- Swagger/OpenAPI - API documentation and testing- **Swagger/OpenAPI** - API documentation
+
+2. Register a new account or login
+
+3. Add books using the form (Title and Author required)git clone https://github.com/SamashaHettiarachchi/Software-Engineering-Internship-Assignment.git
+
+4. View all books in the card layout
+
+5. Edit books by clicking the edit buttoncd Software-Engineering-Internship-Assignment
+
+6. Delete books with confirmation dialog
+
+```
+
+## API Endpoints
+
+**Frontend:**### Frontend
+
+### Authentication
+
+- `POST /api/auth/register` - Register new user## Running the Application
+
+- `POST /api/auth/login` - User login
+
+- React 18 - JavaScript library for building user interfaces
+
+### Books
+
+- `GET /api/books` - Get all books### Backend
+
+- `GET /api/books/{id}` - Get specific book
+
+- `POST /api/books` - Create new book- TypeScript - Type-safe JavaScript- **React 18** - UI library
+
+- `PUT /api/books/{id}` - Update book
+
+- `DELETE /api/books/{id}` - Delete book1. Navigate to backend directory:
+
+
+
+## Project Structure````powershell- Vite - Modern build tool and development server- **TypeScript** - Type-safe JavaScript
+
+
+
+```cd Backend\LibraryAPI
+
+Software-Engineering-Internship-Assignment/
+
+├── Backend/```- Axios - HTTP client for API communication- **Vite** - Build tool and dev server
+
+│   └── LibraryAPI/
+
+│       ├── Controllers/        # API endpoints
+
+│       ├── Data/              # Database context
+
+│       ├── Models/            # Entity models2. Restore packages:- CSS3 - Styling and responsive design- **Axios** - HTTP client for API calls
+
+│       ├── Migrations/        # EF Core migrations
+
+│       └── Program.cs         # Entry point```powershell
+
+└── Frontend/
+
+    └── library-frontend/dotnet restore- **CSS3** - Styling with modern features
+
+        └── src/
+
+            ├── components/    # React components````
+
+            ├── services/      # API communication
+
+            ├── types/         # TypeScript interfaces## Prerequisites
+
+            └── App.tsx        # Main component
+
+```3. Build:
+
+
+
+## Testing````powershell## 📋 Prerequisites
+
+
+
+Use Swagger UI at http://localhost:5001 to test API endpoints interactively.dotnet build
+
+
+
+Or use PowerShell:```Before running this application, you need to have the following installed on your system:
+
+
+
+```powershell
+
+# Get all books
+
+Invoke-RestMethod -Uri "http://localhost:5001/api/books" -Method Get4. Run:Before running this application, ensure you have the following installed:
+
+
+
+# Create a book```powershell
+
+$book = @{
+
+    title = "Test Book"dotnet run1. .NET 9.0 SDK or later
+
+    author = "Test Author"
+
+    description = "Test Description"````
+
+} | ConvertTo-Json
+
+- Download from: https://dotnet.microsoft.com/download1. **.NET 9.0 SDK** or later
+
+Invoke-RestMethod -Uri "http://localhost:5001/api/books" -Method Post -Body $book -ContentType "application/json"
+
+```The API will start at http://localhost:5001 and https://localhost:7001
+
+
+
+## Troubleshooting- Verify installation by running: dotnet --version
+
+
+
+### Port Already in Use### Frontend
+
+
+
+```powershell- Download from: https://dotnet.microsoft.com/download
+
+netstat -ano | findstr :5001
+
+taskkill /PID <process-id> /F1. Open new terminal and navigate to frontend:
+
+```
+
+```powershell2. Node.js version 18 or higher with npm   - Verify installation: `dotnet --version`
+
+### Cannot Connect to Backend
+
+cd Frontend\library-frontend
+
+- Ensure backend is running on port 5001
+
+- Check for CORS errors in browser console````- Download from: https://nodejs.org/
+
+- Verify both terminals are running
+
+
+
+### npm Install Fails
 
 2. Install dependencies:   - Verify installation by running: node --version and npm --version2. **Node.js 18+** and npm
 
 ```powershell
 
-npm install
+Remove-Item node_modules -Recurse -Force```powershell
+
+Remove-Item package-lock.json -Force
+
+npm installnpm install
 
 ```
 
-3. Git for version control (optional)   - Download from: https://nodejs.org/
+````
 
-3. Start development server:
+## Contact
 
-```powershell   - Download from: https://git-scm.com/   - Verify installation: `node --version` and `npm --version`
+3. Git for version control (optional) - Download from: https://nodejs.org/
+
+Email: people@expernetic.com
+
+4. Start development server:
+
+---
+
+```powershell   - Download from: https://git-scm.com/   - Verify installation: `node --version`and`npm --version`
+
+Developed by Samasha Hettiarachchi as part of the Software Engineering Internship Assignment for Expernetic LLC.
 
 npm run dev
 
-```
+```````
 
 
 
@@ -266,21 +416,15 @@ Software-Engineering-Internship-Assignment/
 
         └── vite.config.ts
 
-`````````
-
-
+```````
 
 ## API Endpoints
-
-
 
 ### Authentication3. Build the project to ensure everything compiles correctly:2. Restore NuGet packages:
 
 - POST /api/auth/register - Register new user
 
 - POST /api/auth/login - Login user```powershell
-
-
 
 ### Booksdotnet build```powershell
 
@@ -298,7 +442,7 @@ Software-Engineering-Internship-Assignment/
 
 ## Testing
 
-```powershell3. Build the project:
+```````powershell3. Build the project:
 
 Use Swagger UI at http://localhost:5001 to test the API endpoints.
 
@@ -407,13 +551,9 @@ This project was developed as part of a software engineering internship assignme
 
 npm run devcd Frontend\library-frontend
 
-``````
-
-
+```````
 
 The frontend application will start at: http://localhost:30003. Install dependencies:
-
-
 
 ## Using the Application```powershell
 
@@ -421,11 +561,7 @@ npm install
 
 ### Getting Started```
 
-
-
 1. Open your web browser and navigate to http://localhost:30004. Start the development server:
-
-
 
 2. Register a new account:```powershell
 
@@ -449,53 +585,45 @@ npm install
 
    - Click "Login"2. **Register/Login:**
 
+### Managing Books - Create a new account by clicking "Register here"
 
+- Fill in username, email, and password (min 6 characters)
 
-### Managing Books   - Create a new account by clicking "Register here"
-
-   - Fill in username, email, and password (min 6 characters)
-
-Once logged in, you can perform the following operations:   - Or login with existing credentials
-
-
+Once logged in, you can perform the following operations: - Or login with existing credentials
 
 **Adding a Book:**3. **Add a Book:**
 
 - Fill in the form fields with the book information
 
-- Title is required (maximum 200 characters)   - After logging in, fill in the form with Title (required), Author (required), and Description (optional)
+- Title is required (maximum 200 characters) - After logging in, fill in the form with Title (required), Author (required), and Description (optional)
 
-- Author is required (maximum 100 characters)   - Click "Add Book"
+- Author is required (maximum 100 characters) - Click "Add Book"
 
 - Description is optional (maximum 1000 characters)
 
 - Click "Add Book" to save the new record4. **View Books:**
 
+**Viewing Books:** - All books are displayed in a card layout below the form
 
-
-**Viewing Books:**   - All books are displayed in a card layout below the form
-
-- All books are displayed in a card layout below the form   - Each card shows the title, author, description, and creation date
+- All books are displayed in a card layout below the form - Each card shows the title, author, description, and creation date
 
 - Each card shows the title, author, description, and timestamps
 
 - Books are automatically refreshed after any changes5. **Edit a Book:**
 
+**Editing a Book:** - Click the ✏️ (edit) button on any book card
 
+- Click the edit button on the book card you want to modify - The form will populate with the book's data
 
-**Editing a Book:**   - Click the ✏️ (edit) button on any book card
-
-- Click the edit button on the book card you want to modify   - The form will populate with the book's data
-
-- The form will populate with the current book data   - Make changes and click "Update Book"
+- The form will populate with the current book data - Make changes and click "Update Book"
 
 - Make your changes to any field
 
 - Click "Update Book" to save the modifications6. **Delete a Book:**
 
-- Click "Cancel" if you decide not to make changes   - Click the 🗑️ (delete) button on any book card
+- Click "Cancel" if you decide not to make changes - Click the 🗑️ (delete) button on any book card
 
-   - Confirm the deletion in the popup dialog
+  - Confirm the deletion in the popup dialog
 
 **Deleting a Book:**
 
@@ -511,7 +639,7 @@ SE_assignment/
 
 ├── Backend/
 
-```│   └── LibraryAPI/
+```│ └── LibraryAPI/
 
 Software-Engineering-Internship-Assignment/│       ├── Controllers/
 
@@ -599,45 +727,37 @@ Software-Engineering-Internship-Assignment/│       ├── Controllers/
 
         └── vite.config.ts              - Vite configuration└── README.md
 
-``````
-
-
+```
 
 ## API Endpoints## 🔌 API Endpoints
 
-
-
 ### Authentication Endpoints### Authentication API
 
-
-
-**POST /api/auth/register**| Method | Endpoint             | Description       |
+**POST /api/auth/register**| Method | Endpoint | Description |
 
 - Register a new user account| ------ | -------------------- | ----------------- |
 
-- Request body: { username, email, password }| POST   | `/api/auth/register` | Register new user |
+- Request body: { username, email, password }| POST | `/api/auth/register` | Register new user |
 
-- Returns: User information and success message| POST   | `/api/auth/login`    | Login user        |
-
-
+- Returns: User information and success message| POST | `/api/auth/login` | Login user |
 
 **POST /api/auth/login**### Books API
 
 - Authenticate and log in a user
 
-- Request body: { usernameOrEmail, password }| Method | Endpoint          | Description         |
+- Request body: { usernameOrEmail, password }| Method | Endpoint | Description |
 
 - Returns: User information and success message| ------ | ----------------- | ------------------- |
 
-| GET    | `/api/books`      | Get all books       |
+| GET | `/api/books` | Get all books |
 
-### Book Management Endpoints| GET    | `/api/books/{id}` | Get a specific book |
+### Book Management Endpoints| GET | `/api/books/{id}` | Get a specific book |
 
-| POST   | `/api/books`      | Create a new book   |
+| POST | `/api/books` | Create a new book |
 
-**GET /api/books**| PUT    | `/api/books/{id}` | Update a book       |
+**GET /api/books**| PUT | `/api/books/{id}` | Update a book |
 
-- Retrieve all books in the library| DELETE | `/api/books/{id}` | Delete a book       |
+- Retrieve all books in the library| DELETE | `/api/books/{id}` | Delete a book |
 
 - Returns: Array of book objects
 
@@ -651,15 +771,13 @@ Software-Engineering-Internship-Assignment/│       ├── Controllers/
 
   "username": "johndoe",
 
-**POST /api/books**  "email": "john@example.com",
+**POST /api/books** "email": "john@example.com",
 
-- Create a new book record  "password": "password123"
+- Create a new book record "password": "password123"
 
 - Request body: { title, author, description }}
 
 - Returns: Created book object with 201 status```
-
-
 
 **PUT /api/books/{id}**### Example API Request (Create Book)
 
@@ -671,13 +789,13 @@ Software-Engineering-Internship-Assignment/│       ├── Controllers/
 
   "title": "The Great Gatsby",
 
-**DELETE /api/books/{id}**  "author": "F. Scott Fitzgerald",
+**DELETE /api/books/{id}** "author": "F. Scott Fitzgerald",
 
-- Delete a book from the library  "description": "A classic American novel"
+- Delete a book from the library "description": "A classic American novel"
 
 - Returns: 204 No Content on success}
 
-```
+````
 
 ### Example API Requests
 
@@ -725,7 +843,7 @@ Create a new book:```powershell
 
 ### Using Swagger UIInvoke-RestMethod -Uri "http://localhost:5001/api/books" -Method Post -Body $body -ContentType "application/json"
 
-```
+````
 
 1. Navigate to http://localhost:5001 or https://localhost:7001 in your browser
 
@@ -751,7 +869,7 @@ Test the API directly from PowerShell:- ✅ Error handling and logging
 
 - ✅ CORS configuration for frontend access
 
-```powershell- ✅ Swagger/OpenAPI documentation
+````powershell- ✅ Swagger/OpenAPI documentation
 
 # Get all books- ✅ Proper response codes (200, 201, 204, 400, 404, 500)
 
@@ -978,3 +1096,4 @@ This project was developed as part of a software engineering internship assignme
 ---
 
 Developed as part of the Software Engineering Internship Assignment for Expernetic LLC.
+````
